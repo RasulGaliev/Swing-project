@@ -4,6 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class DrawFrame extends JFrame implements ActionListener {
+    Container c = getContentPane();
 
     // JComponent component = new DrawComponent();
     // add(component);
@@ -20,7 +21,6 @@ public class DrawFrame extends JFrame implements ActionListener {
         нескольких компонент в одном контейнере (например, класса Panel).*/
         mainPanel.setLayout(new CardLayout(10, 10)); // РАСПОЛОЖЕНИЕ
         mainPanel.setBackground(Color.WHITE); // цвет
-
         DrawComponent1 drawComponent1 = new DrawComponent1();
         mainPanel.add(drawComponent1);
 
